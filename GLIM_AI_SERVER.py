@@ -157,7 +157,7 @@ def start_server():
 
             # 파일 수신
             received_data = b""
-            chunk_size = 8192 # 필요에 따라 이 값을 조절하세요.
+            chunk_size = 8192 # 버퍼사이즈임 필요에따라 조절하면 쌉가능
             while True:
                 data = client_socket.recv(chunk_size)
                 if not data:
